@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cpm.Marico_so">
+
+    <meta-data
+        android:name="firebase_crashlytics_collection_enabled"
+        android:value="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/marico_co_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.cpm.Marico_so.dailyEntry.TDPSaleTargetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.MonthlyTargetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.PerformanceReportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.TesterStockActivity"
+            android:label="@string/title_activity_share_of_shelf"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.CheckOutConfirmationActivity"
+            android:label="@string/download_data"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.GroomingImageActivity"
+            android:label="@string/title_activity_selfie"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.PerformanceWebview"
+            android:label="@string/title_activity_performance_webview"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.SamplingActivity"
+            android:label="@string/title_activity_sampling"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.Additonalvisibility"
+            android:label="@string/title_activity_additonalvisibility"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.ShareOfShelfActivity"
+            android:label="@string/title_activity_share_of_shelf"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.oneQad.OneQADActivity"
+            android:label="@string/title_activity_one_qad"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.AutoLoginActivity"
+            android:label="@string/title_activity_auto_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.password.MPinActivity"
+            android:label="@string/title_activity_mpin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.password.ChangePasswordActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="@string/title_activity_change_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBRnBm_JjsCgXUuMKEwAdp1mGJLg_Mfipo" /> <!-- android:value="AIzaSyCV9SELy-EXFg9pcKtCLqzp-DAo-aRsjj0" /> -->
+        <!-- android:value="AIzaSyA-MIPQ2JhVqtewf3nx2MJHwIdniVzuoaI" /> -->
+        <activity
+            android:name="com.cpm.Marico_so.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cpm.Marico_so.LoginActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="@string/login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.MainActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.autoupdate.AutoUpdateActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.StoreListActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.StoreimageActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="io.github.memfis19.annca.internal.ui.camera.Camera1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeFullscreen" />
+        <activity
+            android:name="io.github.memfis19.annca.internal.ui.preview.PreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeFullscreen" />
+        <activity
+            android:name="com.cpm.Marico_so.download.DownloadActivity"
+            android:label="@string/download_data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.EntryMenuActivity"
+            android:label="@string/download_data"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.cpm.Marico_so.upload.Retrofit_method.upload.PreviousDataUploadActivity" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.ServiceActivity"
+            android:label="@string/backup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.NonWorkingActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="@string/title_activity_non_working"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.cpm.Marico_so.geotag.GeoTagStoreList"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:label="@string/blank"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.geotag.GeoTaggingActivity"
+            android:label="@string/title_activity_geo_tagging"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.cpm.Marico_so.upload.Retrofit_method.upload.UploadWithoutWaitActivity"
+            android:label="@string/title_activity_geo_tagging"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.ClosingStock"
+            android:label="@string/title_activity_closing_stock"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.MidDayStock"
+            android:label="@string/title_activity_mid_day_stock"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.OpeningStock"
+            android:label="@string/title_activity_opening_stock"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.PromotionActivity"
+            android:label="@string/title_activity_opening_stock"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.PaidVisibilityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.QuizActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.TrainingActivity"
+            android:label="@string/title_activity_livon"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.DetailerActivity"
+            android:label="@string/title_activity_detailer"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.DBSRCategoryActivity"
+            android:label="@string/title_activity_dbsrcategory"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.cpm.Marico_so.dailyEntry.SkuWiseSaleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
