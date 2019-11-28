@@ -307,10 +307,19 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 jsonObject.put("ModelNumber", model);
                 jsonObject.put("OSVersion", os_version);
 
+
                 if (imeiNumbers.length > 0) {
-                    jsonObject.put("IMEINumber1", imeiNumbers[0]);
+                    if(imeiNumbers[0] == null){
+                        jsonObject.put("IMEINumber1", "0");
+                    }else {
+                        jsonObject.put("IMEINumber1", imeiNumbers[0]);
+                    }
                     if (imeiNumbers.length > 1) {
-                        jsonObject.put("IMEINumber2", imeiNumbers[1]);
+                        if(imeiNumbers[1] == null){
+                            jsonObject.put("IMEINumber2", "0");
+                        }else{
+                            jsonObject.put("IMEINumber2", imeiNumbers[1]);
+                        }
                     } else {
                         jsonObject.put("IMEINumber2", "0");
                     }
@@ -318,6 +327,18 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                     jsonObject.put("IMEINumber1", "0");
                     jsonObject.put("IMEINumber2", "0");
                 }
+
+//                if (imeiNumbers.length > 0) {
+//                    jsonObject.put("IMEINumber1", imeiNumbers[0]);
+//                    if (imeiNumbers.length > 1) {
+//                        jsonObject.put("IMEINumber2", imeiNumbers[1]);
+//                    } else {
+//                        jsonObject.put("IMEINumber2", "0");
+//                    }
+//                } else {
+//                    jsonObject.put("IMEINumber1", "0");
+//                    jsonObject.put("IMEINumber2", "0");
+//                }
 
                 String jsonString2 = jsonObject.toString();
                 UploadImageWithRetrofit upload = new UploadImageWithRetrofit(context);
